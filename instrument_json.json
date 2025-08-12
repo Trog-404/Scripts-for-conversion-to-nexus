@@ -1,0 +1,111 @@
+{
+    "name": "AFM generic equipment",
+    "cantilever":{
+	"m_def": "NXcantilever_spm",
+        "cantilever_oscillator":{
+	    "m_def":"NXcomponent",
+            "name": "oscillator",
+            "oscillator_excitation": {
+                "value":20,
+                "unit": "uV"
+            },
+            "phase_lock_loop":{
+                "m_def": "NXlockin",
+                "amplitude_excitation": {
+                    "value": 15,
+                    "unit": "uV"
+                },
+                "cantilever_phase_positioner": {
+		    "m_def": "NXpositioner",
+                    "name": "Phase pos",
+                    "description": "Positioner of the phase"
+                },
+                "cantilever_amplitude_positioner": {
+                    "m_def": "NXpositioner",
+                    "name": "Amplitude pos",
+                    "description": "Positioner of the amplitude"
+                },
+                "cantilever_frequency_positioner": {
+                    "m_def": "NXpositioner",
+                    "name": "Frequency pos",
+                    "description": "Positioner of the frequency"
+                }
+            }
+        }
+    },
+    "height_piezo_sensor": {
+        "m_def": "NXsensor",
+        "model": "hps model",
+        "positioner":{
+            "m_def": "NXpositioner_spm",
+            "name": "Height piezo pos",
+            "description": "Positioner for the height piezo"
+        },
+        "piezo_configuration":{
+            "m_def": "NXpiezo_config_spm",
+            "piezo_material":{
+            	"m_def": "NXpiezoelectric_material",
+                "name": "Piezoelectric material",
+                "identifier_piezo_material": "PEID1",
+                "chemical_description":{
+		    "m_def": "NXsubstance",
+                    "name": "ZrO",
+                    "molecular_formula_hill": "Fe2O3"
+                },
+                "type": "polymer-film piezoelectrics",
+                "curvature_radius_N":{
+                    "value": 10,
+                    "unit": "nm"
+                }
+            },
+            "calibration":{
+            	"m_def": "NXcalibration",
+                "calibration_type": "active",
+                "calibration_name": "Calibrazione 11/08/2025"
+            }
+        }
+    },
+    "XY_piezo_sensor": {
+        "m_def": "NXsensor",
+        "model": "model 2",
+        "name": "nome sensore",
+        "attached_to": "chuck",
+        "measurement": "current",
+        "positioner":{
+            "m_def": "NXpositioner_spm",
+            "name": "XY piezo pos",
+            "description": "Positioner for the xy piezo"
+        },
+        "piezo_configuration":{
+            "m_def": "NXpiezo_config_spm",
+            "piezo_material":{
+                "m_def": "NXpiezoelectric_material",
+                "name": "Piezoelectric material xy",
+                "identifier_piezo_material": "PEID2",
+                "chemical_description":{
+                    "m_def": "NXsubstance",
+                    "name": "ZrO",
+                    "molecular_formula_hill": "Fe2O3"
+                },
+                "type": "general piezoelectrics",
+                "curvature_radius_N":{
+                    "value": 10,
+                    "unit": "nm"
+                }
+            },
+            "calibration":{
+                "m_def": "NXcalibration",
+                "calibration_type": "passive",
+                "calibration_name": "Calibrazione 11/08/2025"
+            }
+        }
+    },
+    "tip_temp_sensor": {
+        "m_def": "NXsensor",
+        "model": "model 3",
+        "name": "nome sensore",
+        "attached_to": "tip",
+        "measurement": "temperature"
+    }
+}
+

@@ -1,0 +1,9 @@
+{
+    "title": "ProvaAFM",
+    "experiment_identifier":"IDAFM1",
+    "experiment_location": "Trento",
+    "experiment_institution": "FBK",
+    "experiment_facility": "MNF",
+    "experiment_laboratory": "CRD",
+    "scan_mode": "tapping mode"
+}
