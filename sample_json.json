@@ -1,0 +1,8 @@
+{
+    "is_simulation": true,
+    "physical_form":"bulk",
+    "identifier_sample": "sample_ID",
+    "preparation_date": "",
+    "atom_types": "Si, O",
+    "name": "Sample SEM"
+}

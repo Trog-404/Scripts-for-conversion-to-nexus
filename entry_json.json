@@ -1,0 +1,13 @@
+{
+    "experiment_identifier": "experiment_identifier",
+    "experiment_alias": "alias",
+    "experiment_description": "short description",
+    "start_time": "",
+    "end_time": "",
+    "coordinate_system":{
+        "m_def": "NXcoordinate_system",
+        "origin": "sample",
+        "type": "cartesian",
+        "handedness": "right_handed"
+    }
+}
